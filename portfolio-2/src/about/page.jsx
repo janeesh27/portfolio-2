@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const page = (children) => {
   return (
     <>
       <div className="py-4 transform translate-y-[5vh] mx-[1rem] sm:mx-8">
@@ -35,4 +35,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default page;

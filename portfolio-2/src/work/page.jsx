@@ -1,6 +1,6 @@
 import React from "react";
 
-const Work = () => {
+const page = () => {
   return (
     <>
       <div className="transform translate-y-[7vh] mx-[1rem] sm:mx-[10rem] text-center">
@@ -13,9 +13,10 @@ const Work = () => {
           ability to implement responsive layouts, optimize performance, and
           deliver an exceptional user experience.
         </div>
+        <div></div>
       </div>
     </>
   );
 };
 
-export default Work;
+export default page;
