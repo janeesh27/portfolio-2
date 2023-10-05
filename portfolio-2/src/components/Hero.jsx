@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -12,10 +13,22 @@ const Hero = () => {
         </p>
       </div>
       <div className="text-center transform translate-y-[50vh] mx-auto p-4">
-        <div className="grid grid-flow-col sm:w-[30%] sm:mx-auto">
-          <div>1</div>
-          <div>1</div>
-          <div>1</div>
+        <div className="grid grid-flow-col sm:w-[30%] sm:mx-auto ">
+          <div className="mx-auto">
+            <a href="https://www.linkedin.com/in/janeeshpalsingh">
+              <FaLinkedinIn className="w-4 h-4" fill="#66FCF1" />
+            </a>
+          </div>
+          <div className="mx-auto">
+            <a href="https://github.com/janeesh27">
+              <FaGithub className="w-4 h-4" fill="#66FCF1" />
+            </a>
+          </div>
+          <div className="mx-auto">
+            <a href="https://twitter.com/_janeesh_">
+              <FaTwitter className="w-4 h-4" fill="#66FCF1" />
+            </a>
+          </div>
         </div>
       </div>
     </>
