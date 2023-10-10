@@ -24,7 +24,7 @@ const page = (children) => {
           on learning more about backend technologies.
         </div>
         <div className="h-8"></div>
-        <div className="text-center text-[1rem] sm:text-[1.5rem]">
+        <div className="text-center text-[#C5C6C7] text-[1rem] sm:text-[1.5rem]">
           You can reach me here!<br></br>
           <span className="underline hover:text-[#66FCF1]">
             janeesh.tin@gmail.com

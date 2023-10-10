@@ -2,6 +2,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import TypingElement from "./Typingelement";
+
 const Hero = () => {
   return (
     <>
