@@ -4,7 +4,7 @@ const page = (children) => {
   return (
     <>
       <div className="py-4 transform translate-y-[5vh] mx-[1rem] sm:mx-8">
-        <h1 className="text-center text-[2rem]">About Me</h1>
+        <h1 className="text-center text-[#c5c6c7] text-[2rem]">About Me</h1>
         <div className="pt-[1rem] text-left text-[1rem] sm:text-[1.5rem] text-[#C5C6C7]">
           I'm a Frontend Developer experienced in building seamless user
           interfaces. Proficient in HTML, CSS, and JavaScript, I love creating
