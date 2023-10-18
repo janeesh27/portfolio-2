@@ -19,7 +19,7 @@ const TypingElement = ({ message }) => {
         if (currentIndex === messageLength) {
           clearInterval(typingInterval);
         }
-      }, 300);
+      }, 400);
 
       return () => clearInterval(typingInterval);
     }
