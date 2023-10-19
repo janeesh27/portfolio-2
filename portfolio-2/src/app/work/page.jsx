@@ -1,5 +1,4 @@
 import React from "react";
-import { client } from "@/utils/configSanity";
 
 // async function getdata() {
 //   const query = `*[_type == 'work']`;
