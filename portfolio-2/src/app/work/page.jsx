@@ -58,7 +58,7 @@ const page = () => {
     {
       projecttype: "Practice",
       title: "Clearnox Landing Page ",
-      imgsrc: "/Clearnox.png",
+      imgsrc: "/clearnox.png",
       tech: "React | TailwindCSS",
       discription:
         "A Landing page template that I made with Reactjs and TailwindCSS. Feel free to use this for your own projects.",
