@@ -1,21 +1,69 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { Code2 } from "lucide-react";
 
 const Navbar = () => {
+  const navVariants = {
+    hidden: { y: -100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const linkVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
+
   return (
-    <div className="flex justify-between mx-4 text-[#C5C6C7] font-semibold text-[1rem] md:text-[1.5rem] pt-[1rem]">
-      <Link href="/" className="hover:text-[#66FCF1] transition-[2s]">
-        Janeesh
-      </Link>
-      <div className=" flex gap-x-4">
-        <Link href="/about" className="hover:text-[#66FCF1]">
-          About
+    <motion.nav
+      className="flex justify-between items-center mx-4 sm:mx-8 text-[#C5C6C7] font-semibold text-[1rem] md:text-[1.125rem] pt-[1rem] pb-4 border-b border-[#1f2833]"
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.div variants={linkVariants} className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 hover:text-[#66FCF1] transition-colors duration-300 group">
+          <Code2 className="w-6 h-6 text-[#66FCF1] group-hover:rotate-12 transition-transform" strokeWidth={1.5} />
+          <span className="font-bold">Janeesh</span>
         </Link>
-        <Link href="/work" className="hover:text-[#66FCF1]">
-          Work
-        </Link>
-      </div>
-    </div>
+      </motion.div>
+      <motion.div className="flex gap-x-6 sm:gap-x-8" variants={linkVariants}>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2 }}
+        >
+          <Link href="/about" className="hover:text-[#66FCF1] transition-colors duration-300 relative group">
+            About
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#66FCF1] group-hover:w-full transition-all duration-300"></span>
+          </Link>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2 }}
+        >
+          <Link href="/work" className="hover:text-[#66FCF1] transition-colors duration-300 relative group">
+            Work
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#66FCF1] group-hover:w-full transition-all duration-300"></span>
+          </Link>
+        </motion.div>
+      </motion.div>
+    </motion.nav>
   );
 };
 
