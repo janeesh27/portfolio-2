@@ -34,12 +34,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #66FCF1;
+  background: #A78BFA;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #45A29E;
+  background: #8B5CF6;
 }
 
 /* Smooth transitions for all interactive elements */
@@ -47,10 +47,15 @@ a, button {
   transition: all 0.3s ease;
 }
 
-/* Add subtle glow effect on focus */
-a:focus, button:focus {
-  outline: 2px solid #66FCF1;
+/* Add subtle glow effect on focus - only for keyboard navigation */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #A78BFA;
   outline-offset: 2px;
+}
+
+/* Remove outline on click/mouse focus */
+a:focus:not(:focus-visible), button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Improved text rendering */
@@ -76,7 +81,7 @@ p {
 
 /* Selection color */
 ::selection {
-  background-color: #66FCF1;
+  background-color: #A78BFA;
   color: #000;
 }
 

@@ -118,7 +118,7 @@ const page = () => {
           <h1 className="text-[#C5C6C7] font-heading font-bold text-[2.5rem] md:text-[3.5rem] tracking-tight">
             Projects
           </h1>
-          <div className="w-20 h-1 bg-[#66FCF1] mx-auto rounded-full mt-4"></div>
+          <div className="w-20 h-1 bg-[#A78BFA] mx-auto rounded-full mt-4"></div>
         </motion.div>
         <motion.div
           className="text-[#C5C6C7] text-[1rem] sm:text-[1.25rem] pt-4 leading-relaxed max-w-3xl mx-auto"
@@ -135,7 +135,7 @@ const page = () => {
           {items.map((project, index) => (
             <motion.div
               key={index}
-              className="flex flex-col space-y-6 mb-8 sm:mb-16 p-6 sm:p-8 rounded-xl border border-[#1f2833] hover:border-[#66FCF1] bg-[#0b0c10] hover:bg-[#1a1a1a] transition-all duration-300 shadow-lg"
+              className="flex flex-col space-y-6 mb-8 sm:mb-16 p-6 sm:p-8 rounded-xl border border-[#1f2833] hover:border-[#A78BFA] bg-[#0b0c10] hover:bg-[#1a1a1a] transition-all duration-300 shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -143,7 +143,7 @@ const page = () => {
               whileHover={{ scale: 1.02, y: -5 }}
             >
               <motion.div
-                className="flex items-center gap-2 text-[#66FCF1] text-[18px] sm:text-[1.25rem] font-semibold"
+                className="flex items-center gap-2 text-[#A78BFA] text-[18px] sm:text-[1.25rem] font-semibold"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -175,7 +175,7 @@ const page = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </motion.div>
               <motion.p
-                className="text-[#66FCF1] font-bold rounded-md text-[16px] sm:text-[18px]"
+                className="text-[#A78BFA] font-bold rounded-md text-[16px] sm:text-[18px]"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -196,11 +196,11 @@ const page = () => {
               <motion.a
                 href={project.url}
                 target="_blank"
-                className="inline-flex items-center gap-2 border-2 border-[#66FCF1] w-fit px-6 py-3 font-semibold text-[#66FCF1] rounded-lg text-center group"
+                className="inline-flex items-center gap-2 border-2 border-[#A78BFA] w-fit px-6 py-3 font-semibold text-[#A78BFA] rounded-lg text-center group"
                 rel="noopener noreferrer"
                 whileHover={{
                   scale: 1.05,
-                  backgroundColor: "#66FCF1",
+                  backgroundColor: "#A78BFA",
                   color: "#000",
                 }}
                 whileTap={{ scale: 0.95 }}

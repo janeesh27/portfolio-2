@@ -44,7 +44,7 @@ const TypingElement = ({ message, onComplete }) => {
             animate={{ opacity: [1, 0, 1] }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, repeat: Infinity }}
-            className="text-[#66FCF1] ml-1"
+            className="text-[#A78BFA] ml-1"
           >
             |
           </motion.span>

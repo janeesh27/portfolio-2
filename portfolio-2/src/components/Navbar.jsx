@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { Code2 } from "lucide-react";
+import { Code2, User, Briefcase } from "lucide-react";
 
 const Navbar = () => {
   const navVariants = {
@@ -38,28 +38,33 @@ const Navbar = () => {
       animate="visible"
     >
       <motion.div variants={linkVariants} className="flex items-center gap-2">
-        <Link href="/" className="flex items-center gap-2 hover:text-[#66FCF1] transition-colors duration-300 group">
-          <Code2 className="w-6 h-6 text-[#66FCF1] group-hover:rotate-12 transition-transform" strokeWidth={1.5} />
+        <Link
+          href="/"
+          className="flex items-center gap-2 hover:text-[#A78BFA] transition-colors duration-300 group focus:outline-none"
+        >
+          <Code2 className="w-6 h-6 text-[#A78BFA] group-hover:rotate-12 transition-transform" strokeWidth={1.5} />
           <span className="font-bold">Janeesh</span>
         </Link>
       </motion.div>
       <motion.div className="flex gap-x-6 sm:gap-x-8" variants={linkVariants}>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Link href="/about" className="hover:text-[#66FCF1] transition-colors duration-300 relative group">
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+          <Link
+            href="/about"
+            className="hover:text-[#A78BFA] transition-colors duration-300 relative group focus:outline-none flex items-center gap-1.5"
+          >
+            <User className="w-4 h-4" strokeWidth={2} />
             About
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#66FCF1] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A78BFA] group-hover:w-full transition-all duration-300"></span>
           </Link>
         </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Link href="/work" className="hover:text-[#66FCF1] transition-colors duration-300 relative group">
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+          <Link
+            href="/work"
+            className="hover:text-[#A78BFA] transition-colors duration-300 relative group focus:outline-none flex items-center gap-1.5"
+          >
+            <Briefcase className="w-4 h-4" strokeWidth={2} />
             Work
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#66FCF1] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A78BFA] group-hover:w-full transition-all duration-300"></span>
           </Link>
         </motion.div>
       </motion.div>

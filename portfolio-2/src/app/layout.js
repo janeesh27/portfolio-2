@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
           {/* Animated background gradient */}
           <div className="fixed inset-0 -z-10">
             <div className="absolute inset-0 bg-gradient-to-br from-[#0b0c10] via-[#1f2833] to-[#0b0c10] opacity-50"></div>
-            <div className="absolute top-0 -left-4 w-72 h-72 bg-[#66FCF1] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
-            <div className="absolute top-0 -right-4 w-72 h-72 bg-[#45A29E] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-[#66FCF1] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000"></div>
+            <div className="absolute top-0 -left-4 w-72 h-72 bg-[#A78BFA] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
+            <div className="absolute top-0 -right-4 w-72 h-72 bg-[#8B5CF6] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-[#A78BFA] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000"></div>
           </div>
           
           <Navbar />

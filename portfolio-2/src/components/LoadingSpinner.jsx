@@ -5,7 +5,7 @@ const LoadingSpinner = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <motion.div
-        className="w-16 h-16 border-4 border-[#66FCF1] border-t-transparent rounded-full"
+        className="w-16 h-16 border-4 border-[#A78BFA] border-t-transparent rounded-full"
         animate={{ rotate: 360 }}
         transition={{
           duration: 1,

@@ -16,13 +16,13 @@ const footer = () => {
       >
         <motion.p
           className="text-sm sm:text-base"
-          whileHover={{ scale: 1.05, color: "#66FCF1" }}
+          whileHover={{ scale: 1.05, color: "#A78BFA" }}
           transition={{ duration: 0.2 }}
         >
           © {currentYear} | Janeesh Pal Singh
         </motion.p>
         <motion.p
-          className="text-xs sm:text-sm text-[#45A29E] mt-2"
+          className="text-xs sm:text-sm text-[#8B5CF6] mt-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}

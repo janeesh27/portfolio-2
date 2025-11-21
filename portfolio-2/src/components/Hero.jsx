@@ -59,7 +59,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.div
-          className="text-[1.5rem] md:text-[2.5rem] min-h-[40px] text-[#66FCF1] font-heading tracking-tight"
+          className="text-[1.5rem] md:text-[2.5rem] min-h-[40px] text-[#A78BFA] font-heading tracking-tight"
           variants={itemVariants}
         >
           <TypingElement message="Hello There..." onComplete={() => setShowCTA(true)} />
@@ -80,7 +80,7 @@ const Hero = () => {
         >
           <Link href="/work">
             <motion.button
-              className="group px-6 py-3 bg-transparent border-2 border-[#66FCF1] text-[#66FCF1] rounded-lg font-semibold flex items-center gap-2 mx-auto hover:bg-[#66FCF1] hover:text-black transition-all duration-300"
+              className="group px-6 py-3 bg-transparent border-2 border-[#A78BFA] text-[#A78BFA] rounded-lg font-semibold flex items-center gap-2 mx-auto hover:bg-[#A78BFA] hover:text-black transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -114,7 +114,7 @@ const Hero = () => {
             >
               <Linkedin
                 className="w-6 h-6 md:w-8 md:h-8"
-                color="#66FCF1"
+                color="#A78BFA"
                 strokeWidth={1.5}
               />
             </motion.a>
@@ -128,7 +128,7 @@ const Hero = () => {
               variants={iconVariants}
               className="block p-2 rounded-lg hover:bg-[#1a1a1a] transition-colors"
             >
-              <Github className="w-6 h-6 md:w-8 md:h-8" color="#66FCF1" strokeWidth={1.5} />
+              <Github className="w-6 h-6 md:w-8 md:h-8" color="#A78BFA" strokeWidth={1.5} />
             </motion.a>
           </motion.div>
           <motion.div className="mx-auto" variants={iconVariants}>
@@ -140,7 +140,7 @@ const Hero = () => {
               variants={iconVariants}
               className="block p-2 rounded-lg hover:bg-[#1a1a1a] transition-colors"
             >
-              <Twitter className="w-6 h-6 md:w-8 md:h-8" color="#66FCF1" strokeWidth={1.5} />
+              <Twitter className="w-6 h-6 md:w-8 md:h-8" color="#A78BFA" strokeWidth={1.5} />
             </motion.a>
           </motion.div>
         </motion.div>
